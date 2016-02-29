@@ -1,0 +1,88 @@
+.rotate-loading {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  color: #D0D0D0;
+  -webkit-animation: loading-outer 2s linear 0s infinite;
+          animation: loading-outer 2s linear 0s infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0); }
+  .rotate-loading .rotate-outer {
+    border: .1rem solid #E0E0E0;
+    width: 7rem;
+    margin: 0 auto;
+    border-radius: .6rem; }
+    .rotate-loading .rotate-outer .rotate-inner {
+      width: 1rem;
+      border: .5rem solid #CECECE;
+      border-radius: .5rem;
+      position: relative;
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-animation: loading-inner 2s ease-in 0s infinite;
+              animation: loading-inner 2s ease-in 0s infinite; }
+
+@-webkit-keyframes loading-outer {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  25% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg); }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  75% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+@keyframes loading-outer {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  25% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg); }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  75% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+@-webkit-keyframes loading-inner {
+  0% {
+    left: 0rem; }
+  25% {
+    left: 5.8rem; }
+  50% {
+    left: 5.8rem; }
+  75% {
+    left: 0rem; }
+  100% {
+    left: 0rem; } }
+
+@keyframes loading-inner {
+  0% {
+    left: 0rem; }
+  25% {
+    left: 5.8rem; }
+  50% {
+    left: 5.8rem; }
+  75% {
+    left: 0rem; }
+  100% {
+    left: 0rem; } }
+
+.swiper-slide {
+  width: 80%;
+  height: 10rem;
+  background-color: #808080;
+  border-bottom: 2rem solid green; }

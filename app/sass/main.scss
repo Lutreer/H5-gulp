@@ -1,0 +1,33 @@
+$baseFontFamily: Microsoft YaHei;
+$baseColorBlue: #3598db;
+$baseFontSize: 10px;
+
+
+*{
+	box-sizing: border-box;	
+}
+
+html{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	font-size: $baseFontSize;
+}
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	font-size: 1.4rem;
+	font-family: $baseFontFamily;
+}
+
+
+.clearfloat{
+	zoom:1;
+	&:after{
+		display:block;
+		clear:both;
+		content: '';
+	}
+} 
+

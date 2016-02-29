@@ -1,0 +1,48 @@
+.rotate-loading{
+	width:100%;
+	position: absolute;
+	top: 30%;
+	text-align: center;
+	color: #D0D0D0;
+	animation: loading-outer 2s linear 0s infinite;
+	//开启硬件(GPU)加速方法1
+	transform: translate3d(0, 0, 0);
+
+	.rotate-outer{
+		border: .1rem solid #E0E0E0;
+		width:7rem;
+		margin: 0 auto;
+		border-radius:.6rem;
+
+		.rotate-inner{
+			width: 1rem;
+			border: .5rem solid #CECECE;
+			border-radius:.5rem;
+			position: relative;
+			//开启硬件(GPU)加速方法2
+			transform: translateZ(0);
+			animation: loading-inner 2s ease-in 0s infinite;
+		}
+	}
+}
+@keyframes loading-outer{
+	0% {transform:rotate(0deg);}
+	25% {transform:rotate(20deg);}
+	50% {transform:rotate(0deg);}
+	75% {transform:rotate(-20deg);}
+	100% {transform:rotate(0deg);}
+}
+@keyframes loading-inner{
+	0% {left: 0rem;}
+	25% {left: 5.8rem;}
+	50% {left: 5.8rem;}
+	75% {left: 0rem;}
+	100% {left: 0rem;}
+}
+
+.swiper-slide{
+	width:80%;
+	height:10rem;
+	background-color:#808080;
+	border-bottom:2rem solid green;
+}
