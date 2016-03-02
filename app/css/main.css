@@ -12,7 +12,8 @@ body {
   height: 100%;
   margin: 0px;
   font-size: 1.4rem;
-  font-family: Microsoft YaHei; }
+  font-family: Microsoft YaHei;
+  overflow-x: hidden; }
 
 .clearfloat {
   zoom: 1; }

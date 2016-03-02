@@ -19,32 +19,45 @@
 
 <body>
 
-<div class="rotate-loading">
-	加载中
-	<div class="rotate-outer">
-		<div class="rotate-inner"></div>
-	</div>
-</div>
+    <div class="rotate-loading">
+    	加载中
+    	<div class="rotate-outer">
+    		<div class="rotate-inner"></div>
+    	</div>
+    </div>
+    
+    <img class="head-logo" src="img/head-logo.jpg"/>
 
-<div class="swiper-container">
+
+    <div class="layer-up"></div>
+    <div class="layer-down"></div>
+<!-- <div class="swiper-container">
     <div class="swiper-wrapper">
         <div class="swiper-slide">Slide 1</div>
         <div class="swiper-slide">Slide 2</div>
         <div class="swiper-slide">Slide 3</div>
     </div>
-</div>
+</div> -->
 
     <script src="http://cdn.bootcss.com/zepto/1.1.6/zepto.min.js"></script>
 	<script src="http://cdn.bootcss.com/Swiper/3.3.1/js/swiper.jquery.min.js"></script>	
 
 	<!-- build:js js/main/main.min.js -->
+    <script src="js/plugins/zepto-touch.js"></script>
 	<!-- endbuild -->
 
 	<script>        
-  var mySwiper = new Swiper ('.swiper-container', {
-    direction: 'vertical',
-    
-  })        
-  </script>
+        window.onload = function(){
+            setTimeout(function(){
+                alert();
+                
+            },2000);
+        }
+
+        $(".head-logo").tap(function(){
+            alert();
+        })
+
+    </script>
 </body>
 </html>
