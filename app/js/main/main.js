@@ -4,6 +4,14 @@ window.onload = function(){
         $(".rotate-loading").hide();
         $(".head-logo").addClass("head-logo-touch");
     },1500);
+
+    var swiper = new Swiper('.swiper-container', {
+		pagination: '.swiper-pagination',
+		paginationClickable: true,
+		paginationBulletRender: function (index, className) {
+			return '<button class="' + className + '">' + (index + 1) + '</button>';
+		}
+	});  
 }
 
 $(".head-logo").tap(function(){

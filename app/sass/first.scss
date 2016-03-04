@@ -133,14 +133,15 @@
 }
 
 //////section skills///////////////////////////
-.skills{
+section{
 	width:100%;
 	height:100%;
 	padding-top: 9.5rem;
 	overflow: hidden;
-	div:first-child{
+	.contents{
 		width:100%;
 		height:100%;
+		padding: 0px 1rem;
 		overflow: auto;
 
 		h3{
@@ -151,6 +152,37 @@
 			margin-left: .2rem;
 			margin-bottom: .4rem;
 			width:.8rem;
+		}
+
+		.swiper-page{
+			height:2.5rem;
+			display:flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: stretch;
+			
+
+			span:nth-child(1){
+				width:25%;
+				height:100%;
+				border: 1px solid #808080;
+				border-radius: 1.5rem 0 0 0;
+			}
+			span:nth-child(2){
+				width:25%;
+				height:100%;
+				border: 1px solid #808080;
+			}
+			span:nth-child(3){
+				width:25%;
+				height:100%;
+				border: 1px solid #808080;
+			}
+			span:nth-child(4){
+				width:25%;
+				height:100%;
+				border: 1px solid #808080;
+			}
 		}
 	}
 }
